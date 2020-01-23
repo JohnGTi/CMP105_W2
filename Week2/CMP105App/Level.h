@@ -5,7 +5,6 @@
 #include <string.h>
 #include <iostream>
 
-
 class Level{
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
@@ -25,5 +24,11 @@ private:
 	Input* input;
 
 	// Add your object here
+	sf::Font font;
+	sf::Text mousePos;
 
+	bool drag = true;
+	double x1 = 0, x2 = 0, y1 = 0, y2 = 0;
+	int allCalc = 0;
+	double c = 0;
 };
